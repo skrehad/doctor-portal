@@ -4,10 +4,14 @@ import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 
 const WorkSample = () => {
   return (
-    <div className="my-16">
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <img src={image} alt="" className="max-w-sm rounded-lg shadow-2xl" />
+    <div className="mt-16 lg:mb-40">
+      <div className="hero">
+        <div className="hero-content lg:p-10  grid lg:grid-cols-2">
+          <img
+            src={image}
+            alt=""
+            className="lg:h-[400px] lg:w-[400px] m-auto rounded-lg shadow-2xl"
+          />
           <div>
             <h1 className="text-5xl font-bold">
               Exceptional Dental Care, on Your Terms
