@@ -18,7 +18,7 @@ const MakeAppointment = () => {
             alt=""
             className="-mt-32 hidden md:block lg:w-1/2 rounded-lg shadow-2xl"
           />
-          <div>
+          <div className="p-4">
             <h4 className="text-lg text-primary font-bold">Appointment</h4>
             <h1 className=" text-white text-4xl font-bold">
               Make an appointment Today
