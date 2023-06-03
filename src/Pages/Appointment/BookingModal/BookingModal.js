@@ -27,7 +27,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
     // and once data is saved then close the modal
     // and display success toast
     console.log(booking);
-    setTreatment(null);
+    // setTreatment(null);
   };
 
   return (

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AppointmentBanner from "../AppointmentBanner/AppointmentBanner";
 import AvailableAppointment from "../AvailableAppointment/AvailableAppointment";
-// import AvailableAppointments from "../AvailableAppointments/AvailableAppointments";
 
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
