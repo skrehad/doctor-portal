@@ -64,6 +64,8 @@ const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
             <input
               name="name"
               type="text"
+              defaultValue={user.displayName}
+              disabled
               placeholder="Your Name"
               className="input w-full input-bordered"
             />
@@ -71,6 +73,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
               name="email"
               type="email"
               defaultValue={user.email}
+              disabled
               placeholder="Email Address"
               className="input w-full input-bordered"
             />
