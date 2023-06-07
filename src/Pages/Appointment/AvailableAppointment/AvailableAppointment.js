@@ -1,9 +1,9 @@
 import { format } from "date-fns";
 import React, { useState } from "react";
-// import Loading from "../../Shared/Loading/Loading";
 import BookingModal from "../BookingModal/BookingModal";
 import AppointmentOption from "./AppointmentOption";
 import { useQuery } from "react-query";
+import Loading from "../../../Shared/Loading/Loading";
 
 const AvailableAppointments = ({ selectedDate }) => {
   const [treatment, setTreatment] = useState(null);
@@ -11,7 +11,7 @@ const AvailableAppointments = ({ selectedDate }) => {
   const {
     data: appointmentOptions = [],
     refetch,
-    // isLoading,
+    isLoading,
   } = useQuery({
     queryKey: ["appointmentOptions", date],
     queryFn: async () => {
@@ -21,9 +21,9 @@ const AvailableAppointments = ({ selectedDate }) => {
     },
   });
 
-  // if (isLoading) {
-  //   return <Loading></Loading>;
-  // }
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
 
   return (
     <section className="my-16">
