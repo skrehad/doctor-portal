@@ -32,9 +32,14 @@ const Navbar = () => {
           </li>
         </>
       ) : (
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
+        <div className="lg:flex">
+          <li>
+            <Link to="/signup">signUp</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+        </div>
       )}
     </React.Fragment>
   );
