@@ -1,8 +1,10 @@
 import { format } from "date-fns";
 import React, { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthProvider";
+import { toast } from "react-hot-toast";
 
-const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
+const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
+  // console.log(treatment.name);
   // treatment is just another name of appointmentOptions with name, slots, _id
   const { name, slots } = treatment;
   const date = format(selectedDate, "PP");
@@ -15,21 +17,35 @@ const BookingModal = ({ treatment, setTreatment, selectedDate }) => {
     const name = form.name.value;
     const email = form.email.value;
     const phone = form.phone.value;
+    const treatmentName = treatment.name;
     // [3, 4, 5].map((value, i) => console.log(value))
     const booking = {
       appointmentDate: date,
-      treatment: name,
+      treatmentName,
       patient: name,
       slot,
       email,
       phone,
     };
 
-    // TODO: send data to the server
-    // and once data is saved then close the modal
-    // and display success toast
-    console.log(booking);
-    // setTreatment(null);
+    fetch("http://localhost:5000/bookingCollections", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+        if (data.acknowledged) {
+          setTreatment(null);
+          toast.success("Booking Confirmed");
+          refetch();
+        } else {
+          toast.error(data.message);
+        }
+      });
   };
 
   return (

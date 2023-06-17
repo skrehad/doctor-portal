@@ -1,7 +1,7 @@
 import React from "react";
 
 const AppointmentOption = ({ appointmentOption, setTreatment }) => {
-  console.log(appointmentOption);
+  // console.log(appointmentOption);
   const { name, slots } = appointmentOption;
   return (
     <div className="card shadow-xl">
