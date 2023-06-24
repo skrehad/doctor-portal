@@ -6,12 +6,12 @@ import Home from "../Pages/Home/Home/Home";
 import Appointment from "../Pages/Appointment/Appointment/Appointment";
 import PrivateRoute from "./PrivateRoute";
 import DashboardLayout from "../Layout/DashboardLayout";
-// import DashBoard from "../Pages/DashBoard/DashBoard";
-import MyAppointment from "../Pages/MyAppointment/MyAppointment";
 import AllUsers from "../Pages/DashBoard/AllUsers";
 import AdminRoute from "./AdminRoute";
 import AddDoctor from "../Pages/DashBoard/AddDoctor";
 import ManageDoctors from "../Pages/DashBoard/ManageDoctors";
+import Payment from "../Pages/DashBoard/Payment";
+import MyAppointment from "../Pages/DashBoard/MyAppointment";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +75,12 @@ const router = createBrowserRouter([
             <ManageDoctors></ManageDoctors>
           </AdminRoute>
         ),
+      },
+      {
+        path: "/dashboard/payment/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/bookingCollections/${params.id}`),
+        element: <Payment></Payment>,
       },
     ],
   },

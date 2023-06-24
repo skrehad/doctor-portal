@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
   // console.log(treatment.name);
   // treatment is just another name of appointmentOptions with name, slots, _id
-  const { name, slots } = treatment;
+  const { name, slots, price } = treatment;
   const date = format(selectedDate, "PP");
   const { user } = useContext(AuthContext);
 
@@ -26,6 +26,7 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
       slot,
       email,
       phone,
+      price,
     };
 
     fetch("http://localhost:5000/bookingCollections", {
