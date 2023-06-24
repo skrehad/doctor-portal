@@ -12,11 +12,13 @@ import AddDoctor from "../Pages/DashBoard/AddDoctor";
 import ManageDoctors from "../Pages/DashBoard/ManageDoctors";
 import Payment from "../Pages/DashBoard/Payment";
 import MyAppointment from "../Pages/DashBoard/MyAppointment";
+import DisplayError from "../Shared/DisplayError/DisplayError ";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <DisplayError></DisplayError>,
     children: [
       {
         path: "/",
@@ -47,6 +49,7 @@ const router = createBrowserRouter([
         <DashboardLayout></DashboardLayout>
       </PrivateRoute>
     ),
+    errorElement: <DisplayError></DisplayError>,
     children: [
       {
         path: "/dashboard",
