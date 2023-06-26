@@ -40,17 +40,19 @@ const MyAppointment = () => {
               <th>Treatment Name</th>
               <th>Date</th>
               <th>Time</th>
+              <th>Price</th>
               <th>Payment</th>
             </tr>
           </thead>
           <tbody>
-            {bookings.map((booking, i) => (
+            {bookings?.map((booking, i) => (
               <tr key={booking._id}>
                 <th>{i + 1}</th>
                 <td>{booking.patient}</td>
                 <td>{booking.treatmentName}</td>
                 <td>{booking.appointmentDate}</td>
                 <td>{booking.slot}</td>
+                <td className="font-bold">$ {booking.price}</td>
                 <td>
                   {booking.price && !booking.paid && (
                     <Link to={`/dashboard/payment/${booking._id}`}>
@@ -58,7 +60,9 @@ const MyAppointment = () => {
                     </Link>
                   )}
                   {booking.price && booking.paid && (
-                    <button className="btn btn-sm disabled">Paid</button>
+                    <button disabled className="btn btn-sm">
+                      Paid
+                    </button>
                   )}
                 </td>
               </tr>
