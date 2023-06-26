@@ -29,13 +29,16 @@ const BookingModal = ({ treatment, setTreatment, selectedDate, refetch }) => {
       price,
     };
 
-    fetch("http://localhost:5000/bookingCollections", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(booking),
-    })
+    fetch(
+      "https://doctors-portal-server-five-black.vercel.app/bookingCollections",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(booking),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
