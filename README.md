@@ -1,5 +1,7 @@
 **Website Name: Doctor Portal** <br />
 
+👉 Live Demo: https://doctors-portal-a9d65.web.app/
+
 **About the project 👇** <br />
 
 » Our platform offers convenient login options through Google and Facebook accounts, ensuring a quick and hassle-free entry for users. New users can easily register to create their accounts.<br />
@@ -14,8 +16,6 @@
 » An intuitive and powerful Admin panel puts control in the hands of administrators. They can manage users, add new doctors, oversee existing doctors, publish informative blogs, and maintain comprehensive control over every aspect of the website.<br />
 
 **Admin panel: An Admin can control users,add a doctor,manage doctor,edit doctor,add a blog,control everything in this website**
-
-👉 Live Demo: https://doctors-portal-a9d65.web.app/
 
 **Build with:** <br />
 » CSS <br />
