@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+**Website Name: Doctor Portal** <br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**About the project 👇** <br />
 
-## Available Scripts
+» Our platform offers convenient login options through Google and Facebook accounts, ensuring a quick and hassle-free entry for users. New users can easily register to create their accounts.<br />
+» We understand the importance of accessibility. Our responsive design guarantees that users can effortlessly access and book appointments with doctors from a variety of devices, including smartphones and tablets.<br />
+» Administrators have the power to manage user accounts effectively. This involves adding, editing, and deleting accounts, as well as assigning roles and permissions to ensure smooth user management.<br />
+» Users can easily browse through the list of available doctors and book appointments directly from their personalized User Dashboard.<br />
+» Users can take control of their appointments by conveniently removing bookings they no longer need, enhancing flexibility and user autonomy.<br />
+» Our platform provides access to the website or application's database, offering robust data management and backup capabilities.<br />
+» Users can describe their medical issues and concerns, facilitating effective communication between patients and doctors.<br />
+» Our website goes beyond just booking appointments. It features a unique price comparison function, allowing users to compare prices and services from various doctors and doctor service platforms.<br />
+» The entire process, from user authentication to appointment booking and data management, is seamlessly integrated with the backend, ensuring a smooth and efficient experience.<br />
+» An intuitive and powerful Admin panel puts control in the hands of administrators. They can manage users, add new doctors, oversee existing doctors, publish informative blogs, and maintain comprehensive control over every aspect of the website.<br />
 
-In the project directory, you can run:
+**Admin panel: An Admin can control users,add a doctor,manage doctor,edit doctor,add a blog,control everything in this website**
 
-### `npm start`
+👉 Live Demo: https://doctors-portal-a9d65.web.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Build with:** <br />
+» CSS <br />
+» Daisy UI <br />
+» Tailwind CSS <br />
+» React JS <br />
+» Mongodb <br />
+» Express.js <br />
+» Node.js <br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Use Tools:** <br />
+» FireBase <br />
+» VS Code <br />
+» GitHub <br />
